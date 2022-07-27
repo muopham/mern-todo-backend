@@ -20,7 +20,7 @@ mongoose
 
 //router
 const routers = require("./routers/TodoRouter");
-app.use("/v1/todo", routers);
+app.use("/todo", routers);
 app.get("/", (req, res) => {
   res.send("Hello");
 });
