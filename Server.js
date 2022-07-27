@@ -21,6 +21,9 @@ mongoose
 //router
 const routers = require("./routers/TodoRouter");
 app.use("/v1/todo", routers);
+app.get("/", (req, res) => {
+  res.send("Hello");
+});
 
 app.listen(PORT, () => {
   console.log(`App listen on port ${PORT}`);
